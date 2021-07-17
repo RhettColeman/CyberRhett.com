@@ -1,0 +1,8 @@
+#Style a specific object:
+<a href="/pageroute" style={{
+                    color: "white",
+                    backgroundColor: "#3812e0",
+                    borderRadius: "8px"
+                }}>
+
+#
