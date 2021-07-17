@@ -5,4 +5,11 @@
                     borderRadius: "8px"
                 }}>
 
-#
+#Use State (useState hook)
+import { useState } from 'react'
+
+const [name, setName] = useState('Mario'); //setName is a variable to change into. 'Mario' doesn't have to be a string it can be any data type.
+
+const handleClick = () => {
+        setName('Luigi');
+    }
