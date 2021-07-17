@@ -1,15 +1,34 @@
-#Style a specific object:
+### Style a specific object: ###
 <a href="/pageroute" style={{
                     color: "white",
                     backgroundColor: "#3812e0",
                     borderRadius: "8px"
                 }}>
 
-#Use State (useState hook)
+-----------------------------------------------
+
+### Use State (useState hook) ###
 import { useState } from 'react'
 
-const [name, setName] = useState('Mario'); //setName is a variable to change into. 'Mario' doesn't have to be a string it can be any data type.
-
-const handleClick = () => {
+const Home = () => {
+    //let name = 'Mario'
+    const [name, setName] = useState('Mario');
+    const [age, setAge] = useState(25);
+    
+    const handleClick = () => {
         setName('Luigi');
+        setAge(24);
     }
+    
+    return ( 
+        <div className="home">
+            <h2>Homepage</h2>
+            <p>{ name } is {age} years old!</p>
+            <button onClick={handleClick}> Click Me! </button>
+        </div>
+     );
+}
+ 
+export default Home;
+
+-----------------------------------------------
